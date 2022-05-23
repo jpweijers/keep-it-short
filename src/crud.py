@@ -22,4 +22,11 @@ def get_db_url_by_key(db: Session, url_key: str):
 
 
 def get_db_url_by_secret_key(db: Session, secret_key: str):
-    return db.query((models.URL).filter(models.URL.secret_key) == secret_key).first()
+    return db.query(models.URL).filter(models.URL.secret_key == secret_key).first()
+
+
+def update_db_clicks(db: Session, db_url: models.URL) -> models.URL:
+    db_url.clicks += 1
+    db.commit()
+    db.refresh(db_url)
+    return db_url

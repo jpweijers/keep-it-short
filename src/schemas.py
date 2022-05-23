@@ -7,7 +7,7 @@ class URLBase(BaseModel):
 
 class URL(URLBase):
     is_active: bool
-    click: int
+    clicks: int
 
     class Config:
         orm_mode = True

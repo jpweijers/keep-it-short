@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "keep-it-short"
+version = "0.1.0"
+description = ""
+authors = ["Jean-Paul Weijers <18416852+jpweijers@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.78.0"
+uvicorn = "^0.17.6"
+SQLAlchemy = "^1.4.36"
+python-dotenv = "^0.20.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+mypy = "^0.950"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

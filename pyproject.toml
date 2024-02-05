@@ -6,7 +6,7 @@ authors = ["Jean-Paul Weijers <18416852+jpweijers@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-fastapi = "^0.78.0"
+fastapi = "^0.109.1"
 uvicorn = "^0.17.6"
 SQLAlchemy = "^1.4.36"
 python-dotenv = "^0.20.0"
